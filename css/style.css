@@ -495,8 +495,8 @@ body{
 }
 
 .lightbox .lightbox-iframe{
-    width: 300%;
-    max-width: 300%;
+    width: 200%;
+    max-width: 200%;
     height: 100vh;
     max-height: 200%;
     border: none;
