@@ -422,22 +422,19 @@ body{
 	overflow:hidden;
 }
 
-.work-section .work-item-inner .overlay{
-	position: absolute;
-	left:0;
-	top:0;
-	height: 100%;
-	width: 100%;
-	padding:15px;
-	display: flex;
-	align-items: flex-end;
-	transition: all 0.5s ease;
-	background-color: rgba(0,0,0,0.6);
-	opacity:0;
+.work-section .work-item-inner .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    align-items: flex-end;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 1; /* 항상 보이게 설정 */
 }
-.work-section .work-item-inner:hover .overlay{
-	opacity:1;
-}
+
 .work-section .work-item-inner .overlay h4{
 	color:#ffffff;
 	font-size: 20px;
