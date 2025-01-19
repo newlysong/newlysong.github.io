@@ -82,8 +82,8 @@ body{
  }
  .btn-01:hover{
  	background-color: transparent;
- 	border-color:#5DADE2;
- 	color:#5DADE2;
+ 	border-color:#610015;
+ 	color:#610015;
  }
  .btn-01:focus{
  	outline: none;
@@ -111,7 +111,7 @@ body{
  .preloader .loader{
  	height: 30px;
  	width: 30px;
- 	border:2px solid #5DADE2;
+ 	border:2px solid #610015;
  	border-right:2px solid transparent;
  	border-radius:50%;
  	animation: ani01 2s linear infinite;
@@ -136,7 +136,7 @@ body{
 .header .brand-name a{
 	text-decoration: none;
 	font-size: 30px;
-	color: #5DADE2;
+	color: #610015;
 	text-transform: uppercase;
 	font-weight: 600;
 	letter-spacing:2px;
@@ -243,7 +243,7 @@ body{
    position: absolute;
    height: 30px;
    width: 30px;
-   border:2px solid #5DADE2;
+   border:2px solid #610015;
    right: 5%;
    top:20%;
    animation:ani01 5s linear infinite;
@@ -311,7 +311,7 @@ body{
    position: absolute;
    height: 30px;
    width: 30px;
-   border:2px solid #5DADE2;
+   border:2px solid #610015;
    left:30px;
    top:30px;
    animation:ani01 5s linear infinite;
