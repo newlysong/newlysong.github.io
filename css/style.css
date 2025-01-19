@@ -50,7 +50,7 @@ body{
  .section-title h1{
  	display: inline-block;
  	font-size: 40px;
- 	color: #BDC3C7;
+ 	color: #610015;
  	font-weight: 700;
  	margin:0;
  	position: relative;
@@ -214,7 +214,7 @@ body{
 }
 .header.fixed .nav ul li a:hover,
 .header .nav ul li a:hover{
-	color:#5DADE2;
+	color:#610015;
 }
 
 /* home section */
