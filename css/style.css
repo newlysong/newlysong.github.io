@@ -534,14 +534,11 @@ body{
 	background-size: cover;
 	background-position: center;
 }
-.contact-section .section-title{
-	text-align: center;
-}
 .contact-section .section-title h1{
-	color:#626567;
+	color:#ffffff;
 }
 .contact-section .section-title h1:before{
-	background-color: #ffffff;
+	background-color: #610015;
 	left: 50%;
 	margin-left: -40px;
 }
@@ -704,3 +701,4 @@ body{
     	padding: 55px 5px;
     }
 }
+
