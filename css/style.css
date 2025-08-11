@@ -534,14 +534,6 @@ body{
 	background-size: cover;
 	background-position: center;
 }
-.contact-section .section-title h1{
-	color:#ffffff;
-}
-.contact-section .section-title h1:before{
-	background-color: #610015;
-	left: 50%;
-	margin-left: -40px;
-}
 
 .contact-section .contact-form{
 	flex:0 0 100%;
@@ -701,4 +693,5 @@ body{
     	padding: 55px 5px;
     }
 }
+
 
