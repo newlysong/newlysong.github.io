@@ -354,10 +354,10 @@ body{
 	padding:15px;
 }
 
-/*.license-section .license-item-inner{
+.license-section .license-item-inner{
  position: relative;
  overflow:hidden;
-}*/
+}
 
 .license-section .license-item-inner {
     pointer-events: none;   /* 클릭, hover 전부 막힘 */
@@ -373,7 +373,7 @@ body{
     filter: grayscale(100%);   /* 그대로 */
     transform: none;
 }
-/*.license-section .license-item-inner .overlay{
+.license-section .license-item-inner .overlay{
 	position: absolute;
 	left:0;
 	top:0;
@@ -384,7 +384,7 @@ body{
 	align-items: center;
 	justify-content: center;
 	transition: all 0.5s ease;
-}*/
+}
 .license-section .license-item-inner:hover .overlay {
     background-color: rgba(0,0,0,0.6);  /* 원래 상태 유지 */
 }
@@ -715,6 +715,7 @@ h4 .sub-info {
     	padding: 55px 5px;
     }
 }
+
 
 
 
