@@ -353,19 +353,25 @@ body{
 	max-width: 33.33%;
 	padding:15px;
 }
-.license-section .license-item-inner{
+
+/*.license-section .license-item-inner{
  position: relative;
  overflow:hidden;
+}*/
+
+.license-section .license-item-inner {
+    pointer-events: none;   /* 클릭, hover 전부 막힘 */
 }
+
 .license-section .license-item-inner img{
 	width: 100%;
 	display: block;
 	filter: grayscale(100%);
 	transition: all 0.5s ease;
 }
-.license-section .license-item-inner:hover img{
-	filter: grayscale(0);
-	transform: scale(1.1);
+.license-section .license-item-inner:hover img {
+    filter: grayscale(100%);   /* 그대로 */
+    transform: none;
 }
 .license-section .license-item-inner .overlay{
 	position: absolute;
@@ -379,8 +385,8 @@ body{
 	justify-content: center;
 	transition: all 0.5s ease;
 }
-.license-section .license-item-inner:hover .overlay{
-	background-color: transparent;
+.license-section .license-item-inner:hover .overlay {
+    background-color: rgba(0,0,0,0.6);  /* 원래 상태 유지 */
 }
 
 .license-section .license-item-inner .overlay h4{
@@ -391,9 +397,12 @@ body{
 	transition: all 0.5s ease;
 	text-transform: capitalize;
 }
-.license-section .license-item-inner .overlay:hover h4{
-  color: #ffffff;
+
+.license-section .license-item-inner .overlay:hover h4 {
+    color: #BDC3C7; /* 원래 상태 유지 */
 }
+
+
 
 /* Work Section */
 
@@ -693,5 +702,6 @@ body{
     	padding: 55px 5px;
     }
 }
+
 
 
