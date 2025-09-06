@@ -389,14 +389,13 @@ body{
     background-color: rgba(0,0,0,0.6);  /* 원래 상태 유지 */
 }
 
-/*.license-section .license-item-inner .overlay h4{
+.license-section .license-item-inner .overlay h4{
 	color:#BDC3C7;
 	font-size: 20px;
 	margin:0;
-	text-align: center;
+	text-align: left;
 	transition: all 0.5s ease;
-	text-transform: capitalize;
-}*/
+}
 
 .license-section .license-item-inner .overlay:hover h4 {
     color: #BDC3C7; /* 원래 상태 유지 */
@@ -716,6 +715,7 @@ h4 .sub-info {
     	padding: 55px 5px;
     }
 }
+
 
 
 
