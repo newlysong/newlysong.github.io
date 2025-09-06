@@ -347,57 +347,42 @@ body{
   padding: 80px 0 0;
 }
 
-.license-section .section-title h1 {
-  text-align: center;
-  color: #ffffff;
-  margin-bottom: 50px;
-}
-
-.license-section .row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
 .license-section .license-item {
-  flex: 0 0 32%;
-  max-width: 32%;
-  margin-bottom: 30px;
-  display: flex;
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  padding: 15px;
 }
 
 .license-section .license-item-inner {
   position: relative;
   overflow: hidden;
-  width: 100%;
-  min-height: 400px; /* 카드 높이 통일 */
 }
 
 .license-section .license-item-inner img {
   width: 100%;
   display: block;
-  object-fit: cover;
+  filter: grayscale(100%); /* 항상 흑백 */
 }
 
 .license-section .license-item-inner .overlay {
-  position: absolute; /* 이미지 위에 겹치도록 */
+  position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
 
   display: flex;
   flex-direction: column;
-  justify-content: center; /* 세로 중앙 */
-  align-items: center;     /* 제목 가운데 정렬 */
-  padding: 20px;
+  justify-content: center; /* 수직 중앙 */
+  align-items: center;     /* 수평 중앙 */
+
+  background-color: rgba(0,0,0,0.6); /* 항상 배경 반투명 */
 }
 
 .license-section .license-item-inner .overlay h4 {
-  color: #ffffff;
+  color: #BDC3C7;
   font-size: 20px;
-  margin: 0 0 15px 0;
+  margin: 0;
   text-align: center; /* 제목 중앙 */
 }
 
@@ -407,8 +392,10 @@ body{
   font-weight: 400;
   color: #ddd;
   font-style: italic;
-  text-align: center; /* 내용 좌측 정렬 */
+  margin-top: 10px;
+  text-align: center; /* 내용도 중앙 */
 }
+
 
 /* Responsive */
 @media(max-width: 991px) {
@@ -737,6 +724,7 @@ h4 .sub-info {
     	padding: 55px 5px;
     }
 }
+
 
 
 
