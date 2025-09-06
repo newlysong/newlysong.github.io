@@ -351,62 +351,50 @@ body{
   flex: 0 0 33.33%;
   max-width: 33.33%;
   padding: 15px;
-  display: flex;
-  flex-direction: column; /* 높이 맞추기 위해 flex 사용 */
 }
 
 .license-section .license-item-inner {
   position: relative;
   overflow: hidden;
-  pointer-events: none; /* 클릭/hover 막기 */
-  display: flex;
-  flex-direction: column;
-  flex: 1; /* 아이템 높이 동일하게 */
 }
 
 .license-section .license-item-inner img {
   width: 100%;
   display: block;
   filter: grayscale(100%);
+  transition: all 0.5s ease;
 }
 
 .license-section .license-item-inner .overlay {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
+  position: relative; /* absolute 제거 */
   background-color: rgba(0, 0, 0, 0.6);
-
-  /* 텍스트 중앙 정렬 */
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* 시작 위치를 위쪽으로 */
-  align-items: center; /* 수평 중앙 */
-  padding-top: 30px; /* 시작 위치 내려오기 */
-  padding-left: 15px;
-  padding-right: 15px;
+  justify-content: center; /* 세로 중앙 */
+  align-items: center;     /* 가로 중앙 */
+  min-height: 300px;       /* 카드 높이 통일 */
+  padding: 20px 15px;      /* 텍스트 여백 */
 }
 
 .license-section .license-item-inner .overlay h4 {
   color: #BDC3C7;
   font-size: 20px;
-  margin: 0;
+  margin: 0 0 10px 0;
   text-align: center; /* 제목 가운데 */
 }
 
 .license-section .license-item-inner .overlay h4 .sub-info {
-  display: block;
+  display: block;       /* 줄 바꿈 강제 */
   font-size: 0.9rem;
   font-weight: 400;
   color: #ddd;
   font-style: italic;
   margin-top: 10px;
-  text-align: left; /* 내용 좌측 정렬 */
+  text-align: center;
 }
 
-/* 반응형 */
-@media(max-width: 991px) {
+/* Responsive */
+@media(max-width: 767px) {
   .license-section .license-item {
     flex: 0 0 50%;
     max-width: 50%;
@@ -732,6 +720,7 @@ h4 .sub-info {
     	padding: 55px 5px;
     }
 }
+
 
 
 
