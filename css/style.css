@@ -373,7 +373,7 @@ body{
     filter: grayscale(100%);   /* 그대로 */
     transform: none;
 }
-.license-section .license-item-inner .overlay{
+/*.license-section .license-item-inner .overlay{
 	position: absolute;
 	left:0;
 	top:0;
@@ -384,19 +384,19 @@ body{
 	align-items: center;
 	justify-content: center;
 	transition: all 0.5s ease;
-}
+}*/
 .license-section .license-item-inner:hover .overlay {
     background-color: rgba(0,0,0,0.6);  /* 원래 상태 유지 */
 }
 
-.license-section .license-item-inner .overlay h4{
+/*.license-section .license-item-inner .overlay h4{
 	color:#BDC3C7;
 	font-size: 20px;
 	margin:0;
 	text-align: center;
 	transition: all 0.5s ease;
 	text-transform: capitalize;
-}
+}*/
 
 .license-section .license-item-inner .overlay:hover h4 {
     color: #BDC3C7; /* 원래 상태 유지 */
@@ -453,6 +453,20 @@ body{
 }
 .work-section .work-item-inner:hover .overlay h4{
 	transform: translateX(0);
+}
+
+h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+h4 .sub-info {
+  display: inline-block; /* 줄바꿈이 유지되면서 별도 스타일 적용 */
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #ddd; /* 연하게 */
+  font-style: italic;
 }
 
 
@@ -702,6 +716,7 @@ body{
     	padding: 55px 5px;
     }
 }
+
 
 
 
