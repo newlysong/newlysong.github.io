@@ -561,7 +561,6 @@ h4 .sub-info {
 }
 .contact-section .contact-img .img-box{
 	padding:200px 0;
-	background-image: url('../img/contact-bg.jpg');
 	background-size: cover;
 	background-position: center;
 }
@@ -724,6 +723,7 @@ h4 .sub-info {
     	padding: 55px 5px;
     }
 }
+
 
 
 
