@@ -347,29 +347,27 @@ body{
   padding: 80px 0 0;
 }
 
-.license-section .row {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch; /* 모든 아이템 높이 동일 */
-}
-
 .license-section .license-item {
   flex: 0 0 33.33%;
   max-width: 33.33%;
   padding: 15px;
+  display: flex;
+  flex-direction: column; /* 높이 맞추기 위해 flex 사용 */
 }
 
 .license-section .license-item-inner {
   position: relative;
   overflow: hidden;
-  pointer-events: none; /* 클릭/hover 전부 막음 */
+  pointer-events: none; /* 클릭/hover 막기 */
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* 아이템 높이 동일하게 */
 }
 
 .license-section .license-item-inner img {
   width: 100%;
   display: block;
   filter: grayscale(100%);
-  transition: none; /* hover 변형 제거 */
 }
 
 .license-section .license-item-inner .overlay {
@@ -380,42 +378,42 @@ body{
   width: 100%;
   background-color: rgba(0, 0, 0, 0.6);
 
-  /* 제목+내용 수직 배치 */
+  /* 텍스트 중앙 정렬 */
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* 상단에서 시작 */
-  align-items: flex-start;     /* 내용 좌측 정렬 */
-  padding: 15px;
-  box-sizing: border-box;
+  justify-content: flex-start; /* 시작 위치를 위쪽으로 */
+  align-items: center; /* 수평 중앙 */
+  padding-top: 30px; /* 시작 위치 내려오기 */
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .license-section .license-item-inner .overlay h4 {
   color: #BDC3C7;
   font-size: 20px;
-  margin: 0 0 10px 0;
-  width: 100%;
-  text-align: center; /* 제목 중앙 정렬 */
+  margin: 0;
+  text-align: center; /* 제목 가운데 */
 }
 
 .license-section .license-item-inner .overlay h4 .sub-info {
-  display: block;       /* 줄 바꿈 강제 */
+  display: block;
   font-size: 0.9rem;
   font-weight: 400;
   color: #ddd;
   font-style: italic;
   margin-top: 10px;
-  text-align: left;     /* 내용 좌측 정렬 */
+  text-align: left; /* 내용 좌측 정렬 */
 }
 
 /* 반응형 */
-@media (max-width: 767px) {
+@media(max-width: 991px) {
   .license-section .license-item {
     flex: 0 0 50%;
     max-width: 50%;
   }
 }
 
-@media (max-width: 575px) {
+@media(max-width: 575px) {
   .license-section .license-item {
     flex: 0 0 100%;
     max-width: 100%;
@@ -734,6 +732,7 @@ h4 .sub-info {
     	padding: 55px 5px;
     }
 }
+
 
 
 
